@@ -1,0 +1,16 @@
+0 verbose cli /Users/saidibenariba/.nvm/versions/node/v22.20.0/bin/node /Users/saidibenariba/.nvm/versions/node/v22.20.0/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.20.0
+3 silly config load:file:/Users/saidibenariba/.nvm/versions/node/v22.20.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/saidibenariba/.npmrc
+5 silly config load:file:/Users/saidibenariba/.nvm/versions/node/v22.20.0/etc/npmrc
+6 verbose title npm prefix
+7 verbose argv "prefix" "--global"
+8 verbose logfile logs-max:10 dir:/Users/saidibenariba/Data Science/Projects/AraHateSpeech_Detection_Twitter/.npm/_logs/2025-12-08T16_12_34_241Z-
+9 verbose logfile /Users/saidibenariba/Data Science/Projects/AraHateSpeech_Detection_Twitter/.npm/_logs/2025-12-08T16_12_34_241Z-debug-0.log
+10 verbose cwd /Users/saidibenariba/Data Science/Projects/AraHateSpeech_Detection_Twitter
+11 verbose os Darwin 25.1.0
+12 verbose node v22.20.0
+13 verbose npm  v10.9.3
+14 verbose exit 0
+15 info ok
