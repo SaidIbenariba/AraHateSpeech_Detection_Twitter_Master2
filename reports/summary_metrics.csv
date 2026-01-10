@@ -1,5 +1,0 @@
-Dataset,Model,Accuracy,F1_Class1
-MDOLLD,LinearSVC,0.8598,0.8003
-MDOLLD,SGDClassifier,0.8543,0.7769
-arHate,LinearSVC,0.8973,0.8344
-arHate,SGDClassifier,0.8733,0.7728
