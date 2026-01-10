@@ -1,0 +1,133 @@
+body {
+  font-family: "Cairo", sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: min(700px, 92vw);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 18px 0;
+}
+
+textarea {
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 18px;
+  direction: rtl;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+}
+
+textarea:focus {
+  border-color: #0056d6;
+  box-shadow: 0 0 0 3px rgba(0, 86, 214, 0.15);
+}
+
+button {
+  background-color: #0056d6;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #003e9c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ✅ Result box */
+.result {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.result.normal {
+  background-color: #c7f7c1;
+  color: #003e00;
+}
+
+.result.hate {
+  background-color: #ffbaba;
+  color: #7a0000;
+}
+
+.result.error {
+  background-color: #ffe6a6;
+  color: #6b4b00;
+}
+
+
+/* يظهر تحت الفورم وقت التحليل */
+.loading {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+/* ✅ Spinner block */
+.hidden {
+  display: none;
+}
+
+/* Spinner circle */
+.spinner {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 6px solid #d9d9d9;
+  border-top-color: #0056d6;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ✅ Optional cleaned text */
+.details {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.details summary {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+.cleaned-box {
+  margin-top: 10px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 1.8;
+}

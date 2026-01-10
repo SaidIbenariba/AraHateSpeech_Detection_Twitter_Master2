@@ -1,0 +1,16 @@
+=== Dataset: MDOLLD | Model: SGDClassifier ===
+
+Confusion Matrix:
+[[3064  108]
+ [ 635 1294]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.8283    0.9660    0.8919      3172
+           1     0.9230    0.6708    0.7769      1929
+
+    accuracy                         0.8543      5101
+   macro avg     0.8756    0.8184    0.8344      5101
+weighted avg     0.8641    0.8543    0.8484      5101
+

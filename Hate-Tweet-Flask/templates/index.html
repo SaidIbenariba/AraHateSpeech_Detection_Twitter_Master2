@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>نظام كشف خطاب الكراهية في التغريدات</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1>نظام كشف خطاب الكراهية في التغريدات</h1>
+
+    <form id="predict-form" method="POST" action="/">
+      <textarea name="tweet" placeholder="اكتب تغريدتك هنا...">{{ text }}</textarea>
+
+      <button id="btn" type="submit">تحليل</button>
+    </form>
+
+    <!-- ✅ Spinner (hidden by default) -->
+    <div id="loading" class="loading hidden" aria-live="polite">
+      <div class="spinner"></div>
+      <p>جارٍ التحليل...</p>
+    </div>
+
+    <!-- ✅ Error -->
+    {% if error %}
+      <div class="result error">
+        {{ error }}
+      </div>
+    {% endif %}
+
+    <!-- ✅ Prediction result -->
+    {% if prediction %}
+      <div class="result {{ 'hate' if prediction == 'Hate Speech' else 'normal' }}">
+        النتيجة: <strong>{{ prediction }}</strong>
+      </div>
+    {% endif %}
+
+    <!-- ✅ Optional cleaned text display -->
+    {% if cleaned_text %}
+      <details class="details">
+        <summary>عرض النص بعد التنظيف (اختياري)</summary>
+        <div class="cleaned-box">{{ cleaned_text }}</div>
+      </details>
+    {% endif %}
+  </div>
+
+  <!-- JS لازم يكون آخر الصفحة -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
