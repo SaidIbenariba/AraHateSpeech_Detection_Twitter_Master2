@@ -1,7 +1,6 @@
 # arHateDetector: Multi-Dialectal Arabic Hate Speech Detection
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 ![Accuracy](https://img.shields.io/badge/accuracy-93%25-orange)
 ![Framework](https://img.shields.io/badge/framework-AraBERT%20%7C%20Tensorflow-red)
 
